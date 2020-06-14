@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body{
+  margin: 0;
+}
+
+/* 8个问题：
+1.fixed在right：0top:100px的位置 */
+#fixed{
+  position: relative;
+}
+
+.fixed{
+  width:50px;
+  height:50px;
+  background-color: brown;
+  position: fixed;
+  right: 0;
+  top: 100px;
+}
+
+/* 2.内外宽高不固定 写出3种垂直水平居中 */
+#center{
+ width:100px;
+ height:100px;
+ line-height: 100px;
+ text-align:center;
+ background-color:pink;
+ position: absolute;
+  /* 方法1 */
+ left: 50%;
+ top:50%;
+ transform: translate(-50%,-50%);
+
+ /* 方法2 */
+ /* margin-left: -50px;
+ margin-top:-50px; */
+
+  /* 方法3 */
+   /* left:0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   margin: auto;  */
+}
